@@ -7,17 +7,18 @@
   "main": "lib/vabCron.umd.min.js",
   "repository": {
     "type": "git",
+    "url": "git@github.com:zhao163/cron.git"
   },
+  "homepage": " https://github.com/zhao163/cron/dist/",
   "keywords": [
     "cron",
     "vue",
-    "vue-cron",
-    "vab-cron"
+    "vabCron"
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name vabCron --dest lib src/index.js"
+    "lib": "vue-cli-service build --target lib --name vcrontab --dest lib src/index.js"
   },
   "dependencies": {
     "element-ui": "^2.4.11",
