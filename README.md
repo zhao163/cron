@@ -9,20 +9,20 @@ vue 的 cron 组件，支持解析/反解析 cron 表达式，生成最近五次
 ## 安装方式
 
 ```
-npm install vcrontab
+npm install vabCron
 ```
 
 ## 引入方式
 
 ```javascript
 //全局引入
-import vcrontab from "vcrontab";
-Vue.use(vcrontab); //使用方式：<vcrontab></vcrontab>
+import vabCron from "vabCron";
+Vue.use(vabCron); //使用方式：<vabCron></vabCron>
 
 //单独引入
-import vcrontab from "vcrontab";
+import vabCron from "vabCron";
 export default {
-  components: { vcrontab },
+  components: { vabCron },
 };
 ```
 
@@ -36,15 +36,15 @@ export default {
             <el-button type="primary" @click="showDialog">生成 cron</el-button>
         </div>
         <el-dialog title="生成 cron" :visible.sync="showCron">
-            <vcrontab @hide="showCron=false" @fill="crontabFill" :expression="expression"></vcrontab>
+            <vabCron @hide="showCron=false" @fill="crontabFill" :expression="expression"></vabCron>
         </el-dialog>
     </div>
 </template>
 
 <script>
-import vcrontab from 'vcrontab'
+import vabCron from 'vabCron'
 export default {
-    components: { vcrontab },
+    components: { vabCron },
     data() {
         return {
             input: "",

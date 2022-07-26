@@ -5,19 +5,19 @@
       <el-button type="primary" @click="showDialog">生成 cron</el-button>
     </div>
     <el-dialog title="生成 cron" :visible.sync="showCron">
-      <vcrontab
+      <vabCron
         @hide="showCron = false"
         @fill="crontabFill"
         :expression="expression"
-      ></vcrontab>
+      ></vabCron>
     </el-dialog>
   </div>
 </template>
 
 <script>
-import vcrontab from '../src/components/Crontab.vue'
+import vabCron from '../src/components/Crontab.vue'
 export default {
-  components: { vcrontab },
+  components: { vabCron },
   data() {
     return {
       input: '',
