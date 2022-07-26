@@ -2,7 +2,7 @@
 
 ![](public/demo.png)
 
-# vue-crontab
+# vab-cron
 
 vue 的 cron 组件，支持解析/反解析 cron 表达式，生成最近五次的符合条件时间，依赖 vue2 和 element-ui
 
