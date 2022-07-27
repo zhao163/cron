@@ -1,6 +1,6 @@
 {
   "name": "vab-cron",
-  "version": "0.3.5",
+  "version": "1.0.0",
   "description": "vue 的 cron 组件，支持解析/反解析 cron 表达式，生成最近五次的符合条件时间",
   "author": "zhao163",
   "license": "MIT",
@@ -18,7 +18,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name vcrontab --dest lib src/index.js"
+    "lib": "vue-cli-service build --target lib --name vabCron --dest lib src/index.js"
   },
   "dependencies": {
     "element-ui": "^2.4.11",
