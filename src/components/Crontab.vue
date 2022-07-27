@@ -130,7 +130,7 @@
           </tbody>
         </table>
       </div>
-      <CrontabResult :ex="contabValueString"></CrontabResult>
+      <!-- <CrontabResult :ex="contabValueString"></CrontabResult> -->
 
       <div class="pop_btn">
         <el-button size="small" type="primary" @click="submitFill">
