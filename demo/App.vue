@@ -8,6 +8,7 @@
       <vabCron
         @hide="showCron = false"
         @fill="crontabFill"
+        :nums="10"
         :expression="expression"
       ></vabCron>
     </el-dialog>

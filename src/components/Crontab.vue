@@ -130,7 +130,11 @@
           </tbody>
         </table>
       </div>
-      <!-- <CrontabResult :ex="contabValueString"></CrontabResult> -->
+      <CrontabResult
+        v-bind="$attrs"
+        v-on="$listeners"
+        :ex="contabValueString"
+      ></CrontabResult>
 
       <div class="pop_btn">
         <el-button size="small" type="primary" @click="submitFill">
@@ -172,6 +176,7 @@ export default {
       },
     }
   },
+  inheritAttrs: false, //默认true，会显示父组件属性中
   name: 'vcrontab',
   props: ['expression', 'hideComponent'],
   methods: {
