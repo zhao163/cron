@@ -347,7 +347,7 @@ export default {
     // 填充表达式
     submitFill() {
       this.$emit('fill', this.contabValueString)
-      this.hidePopup()
+      // this.hidePopup()
     },
     clearCron() {
       // 还原选择项
